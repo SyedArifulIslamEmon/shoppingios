@@ -1,0 +1,524 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		58FEBA511D4D0F5E000DDEC4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FEBA501D4D0F5E000DDEC4 /* AppDelegate.swift */; };
+		58FEBA531D4D0F5E000DDEC4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FEBA521D4D0F5E000DDEC4 /* ViewController.swift */; };
+		58FEBA561D4D0F5E000DDEC4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58FEBA541D4D0F5E000DDEC4 /* Main.storyboard */; };
+		58FEBA591D4D0F5E000DDEC4 /* r3piShopping.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 58FEBA571D4D0F5E000DDEC4 /* r3piShopping.xcdatamodeld */; };
+		58FEBA5B1D4D0F5E000DDEC4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58FEBA5A1D4D0F5E000DDEC4 /* Assets.xcassets */; };
+		58FEBA5E1D4D0F5E000DDEC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58FEBA5C1D4D0F5E000DDEC4 /* LaunchScreen.storyboard */; };
+		58FEBA691D4D0F5E000DDEC4 /* r3piShoppingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FEBA681D4D0F5E000DDEC4 /* r3piShoppingTests.swift */; };
+		58FEBA741D4D0F5F000DDEC4 /* r3piShoppingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FEBA731D4D0F5F000DDEC4 /* r3piShoppingUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		58FEBA651D4D0F5E000DDEC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58FEBA451D4D0F5E000DDEC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58FEBA4C1D4D0F5E000DDEC4;
+			remoteInfo = r3piShopping;
+		};
+		58FEBA701D4D0F5F000DDEC4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 58FEBA451D4D0F5E000DDEC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 58FEBA4C1D4D0F5E000DDEC4;
+			remoteInfo = r3piShopping;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		58FEBA4D1D4D0F5E000DDEC4 /* r3piShopping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = r3piShopping.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		58FEBA501D4D0F5E000DDEC4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		58FEBA521D4D0F5E000DDEC4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		58FEBA551D4D0F5E000DDEC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58FEBA581D4D0F5E000DDEC4 /* r3piShopping.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = r3piShopping.xcdatamodel; sourceTree = "<group>"; };
+		58FEBA5A1D4D0F5E000DDEC4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		58FEBA5D1D4D0F5E000DDEC4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		58FEBA5F1D4D0F5E000DDEC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58FEBA641D4D0F5E000DDEC4 /* r3piShoppingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = r3piShoppingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58FEBA681D4D0F5E000DDEC4 /* r3piShoppingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = r3piShoppingTests.swift; sourceTree = "<group>"; };
+		58FEBA6A1D4D0F5E000DDEC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58FEBA6F1D4D0F5F000DDEC4 /* r3piShoppingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = r3piShoppingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		58FEBA731D4D0F5F000DDEC4 /* r3piShoppingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = r3piShoppingUITests.swift; sourceTree = "<group>"; };
+		58FEBA751D4D0F5F000DDEC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		58FEBA4A1D4D0F5E000DDEC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58FEBA611D4D0F5E000DDEC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58FEBA6C1D4D0F5E000DDEC4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		58FEBA441D4D0F5E000DDEC4 = {
+			isa = PBXGroup;
+			children = (
+				58FEBA4F1D4D0F5E000DDEC4 /* r3piShopping */,
+				58FEBA671D4D0F5E000DDEC4 /* r3piShoppingTests */,
+				58FEBA721D4D0F5F000DDEC4 /* r3piShoppingUITests */,
+				58FEBA4E1D4D0F5E000DDEC4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		58FEBA4E1D4D0F5E000DDEC4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				58FEBA4D1D4D0F5E000DDEC4 /* r3piShopping.app */,
+				58FEBA641D4D0F5E000DDEC4 /* r3piShoppingTests.xctest */,
+				58FEBA6F1D4D0F5F000DDEC4 /* r3piShoppingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		58FEBA4F1D4D0F5E000DDEC4 /* r3piShopping */ = {
+			isa = PBXGroup;
+			children = (
+				58FEBA501D4D0F5E000DDEC4 /* AppDelegate.swift */,
+				58FEBA521D4D0F5E000DDEC4 /* ViewController.swift */,
+				58FEBA541D4D0F5E000DDEC4 /* Main.storyboard */,
+				58FEBA5A1D4D0F5E000DDEC4 /* Assets.xcassets */,
+				58FEBA5C1D4D0F5E000DDEC4 /* LaunchScreen.storyboard */,
+				58FEBA5F1D4D0F5E000DDEC4 /* Info.plist */,
+				58FEBA571D4D0F5E000DDEC4 /* r3piShopping.xcdatamodeld */,
+			);
+			path = r3piShopping;
+			sourceTree = "<group>";
+		};
+		58FEBA671D4D0F5E000DDEC4 /* r3piShoppingTests */ = {
+			isa = PBXGroup;
+			children = (
+				58FEBA681D4D0F5E000DDEC4 /* r3piShoppingTests.swift */,
+				58FEBA6A1D4D0F5E000DDEC4 /* Info.plist */,
+			);
+			path = r3piShoppingTests;
+			sourceTree = "<group>";
+		};
+		58FEBA721D4D0F5F000DDEC4 /* r3piShoppingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				58FEBA731D4D0F5F000DDEC4 /* r3piShoppingUITests.swift */,
+				58FEBA751D4D0F5F000DDEC4 /* Info.plist */,
+			);
+			path = r3piShoppingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		58FEBA4C1D4D0F5E000DDEC4 /* r3piShopping */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58FEBA781D4D0F5F000DDEC4 /* Build configuration list for PBXNativeTarget "r3piShopping" */;
+			buildPhases = (
+				58FEBA491D4D0F5E000DDEC4 /* Sources */,
+				58FEBA4A1D4D0F5E000DDEC4 /* Frameworks */,
+				58FEBA4B1D4D0F5E000DDEC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = r3piShopping;
+			productName = r3piShopping;
+			productReference = 58FEBA4D1D4D0F5E000DDEC4 /* r3piShopping.app */;
+			productType = "com.apple.product-type.application";
+		};
+		58FEBA631D4D0F5E000DDEC4 /* r3piShoppingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58FEBA7B1D4D0F5F000DDEC4 /* Build configuration list for PBXNativeTarget "r3piShoppingTests" */;
+			buildPhases = (
+				58FEBA601D4D0F5E000DDEC4 /* Sources */,
+				58FEBA611D4D0F5E000DDEC4 /* Frameworks */,
+				58FEBA621D4D0F5E000DDEC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58FEBA661D4D0F5E000DDEC4 /* PBXTargetDependency */,
+			);
+			name = r3piShoppingTests;
+			productName = r3piShoppingTests;
+			productReference = 58FEBA641D4D0F5E000DDEC4 /* r3piShoppingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		58FEBA6E1D4D0F5E000DDEC4 /* r3piShoppingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 58FEBA7E1D4D0F5F000DDEC4 /* Build configuration list for PBXNativeTarget "r3piShoppingUITests" */;
+			buildPhases = (
+				58FEBA6B1D4D0F5E000DDEC4 /* Sources */,
+				58FEBA6C1D4D0F5E000DDEC4 /* Frameworks */,
+				58FEBA6D1D4D0F5E000DDEC4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				58FEBA711D4D0F5F000DDEC4 /* PBXTargetDependency */,
+			);
+			name = r3piShoppingUITests;
+			productName = r3piShoppingUITests;
+			productReference = 58FEBA6F1D4D0F5F000DDEC4 /* r3piShoppingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		58FEBA451D4D0F5E000DDEC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Sean Denton";
+				TargetAttributes = {
+					58FEBA4C1D4D0F5E000DDEC4 = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+					58FEBA631D4D0F5E000DDEC4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 58FEBA4C1D4D0F5E000DDEC4;
+					};
+					58FEBA6E1D4D0F5E000DDEC4 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = 58FEBA4C1D4D0F5E000DDEC4;
+					};
+				};
+			};
+			buildConfigurationList = 58FEBA481D4D0F5E000DDEC4 /* Build configuration list for PBXProject "r3piShopping" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 58FEBA441D4D0F5E000DDEC4;
+			productRefGroup = 58FEBA4E1D4D0F5E000DDEC4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				58FEBA4C1D4D0F5E000DDEC4 /* r3piShopping */,
+				58FEBA631D4D0F5E000DDEC4 /* r3piShoppingTests */,
+				58FEBA6E1D4D0F5E000DDEC4 /* r3piShoppingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58FEBA4B1D4D0F5E000DDEC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58FEBA5E1D4D0F5E000DDEC4 /* LaunchScreen.storyboard in Resources */,
+				58FEBA5B1D4D0F5E000DDEC4 /* Assets.xcassets in Resources */,
+				58FEBA561D4D0F5E000DDEC4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58FEBA621D4D0F5E000DDEC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58FEBA6D1D4D0F5E000DDEC4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		58FEBA491D4D0F5E000DDEC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58FEBA591D4D0F5E000DDEC4 /* r3piShopping.xcdatamodeld in Sources */,
+				58FEBA531D4D0F5E000DDEC4 /* ViewController.swift in Sources */,
+				58FEBA511D4D0F5E000DDEC4 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58FEBA601D4D0F5E000DDEC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58FEBA691D4D0F5E000DDEC4 /* r3piShoppingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		58FEBA6B1D4D0F5E000DDEC4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58FEBA741D4D0F5F000DDEC4 /* r3piShoppingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		58FEBA661D4D0F5E000DDEC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58FEBA4C1D4D0F5E000DDEC4 /* r3piShopping */;
+			targetProxy = 58FEBA651D4D0F5E000DDEC4 /* PBXContainerItemProxy */;
+		};
+		58FEBA711D4D0F5F000DDEC4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 58FEBA4C1D4D0F5E000DDEC4 /* r3piShopping */;
+			targetProxy = 58FEBA701D4D0F5F000DDEC4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		58FEBA541D4D0F5E000DDEC4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58FEBA551D4D0F5E000DDEC4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		58FEBA5C1D4D0F5E000DDEC4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				58FEBA5D1D4D0F5E000DDEC4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		58FEBA761D4D0F5F000DDEC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		58FEBA771D4D0F5F000DDEC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		58FEBA791D4D0F5F000DDEC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = r3piShopping/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.purplemulemedia.r3piShopping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		58FEBA7A1D4D0F5F000DDEC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = r3piShopping/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.purplemulemedia.r3piShopping;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		58FEBA7C1D4D0F5F000DDEC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = r3piShoppingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.purplemulemedia.r3piShoppingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/r3piShopping.app/r3piShopping";
+			};
+			name = Debug;
+		};
+		58FEBA7D1D4D0F5F000DDEC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = r3piShoppingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.purplemulemedia.r3piShoppingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/r3piShopping.app/r3piShopping";
+			};
+			name = Release;
+		};
+		58FEBA7F1D4D0F5F000DDEC4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = r3piShoppingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.purplemulemedia.r3piShoppingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = r3piShopping;
+			};
+			name = Debug;
+		};
+		58FEBA801D4D0F5F000DDEC4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = r3piShoppingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.purplemulemedia.r3piShoppingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = r3piShopping;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		58FEBA481D4D0F5E000DDEC4 /* Build configuration list for PBXProject "r3piShopping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58FEBA761D4D0F5F000DDEC4 /* Debug */,
+				58FEBA771D4D0F5F000DDEC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		58FEBA781D4D0F5F000DDEC4 /* Build configuration list for PBXNativeTarget "r3piShopping" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58FEBA791D4D0F5F000DDEC4 /* Debug */,
+				58FEBA7A1D4D0F5F000DDEC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		58FEBA7B1D4D0F5F000DDEC4 /* Build configuration list for PBXNativeTarget "r3piShoppingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58FEBA7C1D4D0F5F000DDEC4 /* Debug */,
+				58FEBA7D1D4D0F5F000DDEC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		58FEBA7E1D4D0F5F000DDEC4 /* Build configuration list for PBXNativeTarget "r3piShoppingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58FEBA7F1D4D0F5F000DDEC4 /* Debug */,
+				58FEBA801D4D0F5F000DDEC4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		58FEBA571D4D0F5E000DDEC4 /* r3piShopping.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				58FEBA581D4D0F5E000DDEC4 /* r3piShopping.xcdatamodel */,
+			);
+			currentVersion = 58FEBA581D4D0F5E000DDEC4 /* r3piShopping.xcdatamodel */;
+			path = r3piShopping.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 58FEBA451D4D0F5E000DDEC4 /* Project object */;
+}
