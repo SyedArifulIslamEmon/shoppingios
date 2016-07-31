@@ -15,6 +15,11 @@
 		58FEBA5E1D4D0F5E000DDEC4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58FEBA5C1D4D0F5E000DDEC4 /* LaunchScreen.storyboard */; };
 		58FEBA691D4D0F5E000DDEC4 /* r3piShoppingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FEBA681D4D0F5E000DDEC4 /* r3piShoppingTests.swift */; };
 		58FEBA741D4D0F5F000DDEC4 /* r3piShoppingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FEBA731D4D0F5F000DDEC4 /* r3piShoppingUITests.swift */; };
+		58FEBA831D4E6019000DDEC4 /* Product+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FEBA811D4E6019000DDEC4 /* Product+CoreDataProperties.swift */; };
+		58FEBA841D4E6019000DDEC4 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FEBA821D4E6019000DDEC4 /* Product.swift */; };
+		58FEBA8B1D4E60F6000DDEC4 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FEBA8A1D4E60F6000DDEC4 /* SampleData.swift */; };
+		58FEBA8D1D4EA717000DDEC4 /* SampleData.json in Resources */ = {isa = PBXBuildFile; fileRef = 58FEBA8C1D4EA717000DDEC4 /* SampleData.json */; };
+		58FEBA911D4EA8D2000DDEC4 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58FEBA901D4EA8D2000DDEC4 /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +54,11 @@
 		58FEBA6F1D4D0F5F000DDEC4 /* r3piShoppingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = r3piShoppingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58FEBA731D4D0F5F000DDEC4 /* r3piShoppingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = r3piShoppingUITests.swift; sourceTree = "<group>"; };
 		58FEBA751D4D0F5F000DDEC4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58FEBA811D4E6019000DDEC4 /* Product+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Product+CoreDataProperties.swift"; path = "../Product+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		58FEBA821D4E6019000DDEC4 /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Product.swift; path = ../Product.swift; sourceTree = "<group>"; };
+		58FEBA8A1D4E60F6000DDEC4 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SampleData.swift; path = ../SampleData.swift; sourceTree = "<group>"; };
+		58FEBA8C1D4EA717000DDEC4 /* SampleData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = SampleData.json; sourceTree = "<group>"; };
+		58FEBA901D4EA8D2000DDEC4 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = ../SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +109,11 @@
 		58FEBA4F1D4D0F5E000DDEC4 /* r3piShopping */ = {
 			isa = PBXGroup;
 			children = (
+				58FEBA901D4EA8D2000DDEC4 /* SwiftyJSON.swift */,
+				58FEBA851D4E6049000DDEC4 /* models */,
 				58FEBA501D4D0F5E000DDEC4 /* AppDelegate.swift */,
+				58FEBA8A1D4E60F6000DDEC4 /* SampleData.swift */,
+				58FEBA8C1D4EA717000DDEC4 /* SampleData.json */,
 				58FEBA521D4D0F5E000DDEC4 /* ViewController.swift */,
 				58FEBA541D4D0F5E000DDEC4 /* Main.storyboard */,
 				58FEBA5A1D4D0F5E000DDEC4 /* Assets.xcassets */,
@@ -126,6 +140,15 @@
 				58FEBA751D4D0F5F000DDEC4 /* Info.plist */,
 			);
 			path = r3piShoppingUITests;
+			sourceTree = "<group>";
+		};
+		58FEBA851D4E6049000DDEC4 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				58FEBA811D4E6019000DDEC4 /* Product+CoreDataProperties.swift */,
+				58FEBA821D4E6019000DDEC4 /* Product.swift */,
+			);
+			name = models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +258,7 @@
 				58FEBA5E1D4D0F5E000DDEC4 /* LaunchScreen.storyboard in Resources */,
 				58FEBA5B1D4D0F5E000DDEC4 /* Assets.xcassets in Resources */,
 				58FEBA561D4D0F5E000DDEC4 /* Main.storyboard in Resources */,
+				58FEBA8D1D4EA717000DDEC4 /* SampleData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +284,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				58FEBA591D4D0F5E000DDEC4 /* r3piShopping.xcdatamodeld in Sources */,
+				58FEBA8B1D4E60F6000DDEC4 /* SampleData.swift in Sources */,
 				58FEBA531D4D0F5E000DDEC4 /* ViewController.swift in Sources */,
+				58FEBA841D4E6019000DDEC4 /* Product.swift in Sources */,
+				58FEBA831D4E6019000DDEC4 /* Product+CoreDataProperties.swift in Sources */,
+				58FEBA911D4EA8D2000DDEC4 /* SwiftyJSON.swift in Sources */,
 				58FEBA511D4D0F5E000DDEC4 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
