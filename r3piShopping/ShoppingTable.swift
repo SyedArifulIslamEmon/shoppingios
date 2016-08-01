@@ -148,7 +148,21 @@ class ShoppingTable: UITableViewController, UISearchResultsUpdating, UISearchBar
         
         return cell!
     }
-    
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        let theItem : Product
+        
+        if (self.resultSearchController.active)
+        {
+            theItem = filteredProducts[indexPath.row] as! Product
+        }
+        else
+        {
+            
+            theItem = products[indexPath.row] as! Product
+            
+        }
+        purchaseItem(theItem)
+    }
     
     override func tableView(tableView: UITableView, editActionsForRowAtIndexPath indexPath: NSIndexPath) -> [UITableViewRowAction]? {
         let theItem : Product
@@ -165,19 +179,27 @@ class ShoppingTable: UITableViewController, UISearchResultsUpdating, UISearchBar
         }
         
         
-        let more = UITableViewRowAction(style: .Normal, title: "    ") { action, index in
+        let buy1 = UITableViewRowAction(style: .Normal, title: "    ") { action, index in
             print("Buy Button Clicked")
            
+            Cart.sharedInstance.addToCart(theItem, count: 1)
+            tableView.reloadData()
+            
+        }
+        buy1.title = "Buy 1"
+        buy1.backgroundColor = UIColor.greenColor()
+        
+        let buy5 = UITableViewRowAction(style: .Normal, title: "    ") { action, index in
+            print("Buy Button Clicked")
+            
             Cart.sharedInstance.addToCart(theItem, count: 5)
             tableView.reloadData()
             
-            
-            
         }
-        more.title = "Buy"
-        more.backgroundColor = UIColor.greenColor()
+        buy5.title = "Buy 5"
+        buy5.backgroundColor = UIColor.redColor()
         
-        return [more]
+        return [buy1, buy5]
         
     }
     override func tableView(tableView: UITableView, titleForFooterInSection section: Int) -> String? {
@@ -233,6 +255,29 @@ class ShoppingTable: UITableViewController, UISearchResultsUpdating, UISearchBar
         self.resultSearchController.view.removeFromSuperview()
     }
     
-    
+    func purchaseItem(item : Product){
+        let message = String(format: "How Many %@s of %@", item.unit!, item.title!)
+        let alert = UIAlertController(title: message, message: "", preferredStyle: .Alert)
+        
+        
+        alert.addTextFieldWithConfigurationHandler({ (textField) -> Void in
+            textField.text = ""
+            textField.keyboardType = UIKeyboardType.NumberPad
+        })
+        
+        
+        alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: { (action) -> Void in
+            let textField = alert.textFields![0] as UITextField
+            
+            let count = Int(textField.text!)
+            Cart.sharedInstance.addToCart(item, count: count!)
+            print("Added Item to Cart")
+        }))
+        alert.addAction(UIAlertAction(title: "CANCEL", style: .Default, handler: { (action) -> Void in
+          
+        }))
+        alert.view.setNeedsLayout()
+       self.presentViewController(alert, animated: true, completion: nil)
+    }
     
 }
