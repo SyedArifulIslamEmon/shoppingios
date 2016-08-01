@@ -60,14 +60,15 @@ public class SampleData: NSObject {
                             if let title = item["title"].string {
                             newProduct?.title = title
                             }
-                            if let priceString = item["price"].string {
-                                let myDecimalNumber = NSDecimalNumber(string: priceString)
-                                newProduct?.price = myDecimalNumber
+                            if let priceString = item["price"].number {
+                                
+                            newProduct?.price = NSDecimalNumber.init(decimal: priceString.decimalValue)
                             }
                             if let unit = item["unit"].string {
                                 newProduct?.unit = unit
                             }
                             appDelegate.saveContext()
+                             NSNotificationCenter.defaultCenter().postNotificationName("SampleDataLoaded", object: nil)
                         }
                     }
                     
