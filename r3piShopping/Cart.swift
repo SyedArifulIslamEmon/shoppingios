@@ -13,6 +13,8 @@ import UIKit
 public class Cart: NSObject {
     var myCart: NSMutableArray = []
     var cartTotal : NSDecimalNumber = 0.00
+    public var cartConversion : Float = 1
+    public var currency : String = "USD"
     
     public class var sharedInstance : Cart {
         struct Static {
@@ -60,7 +62,7 @@ public class Cart: NSObject {
             let theItem : Product = cartItem["item"] as! Product
             let itemCount : Int = cartItem["count"] as! Int
             
-            self.cartTotal = self.cartTotal.decimalNumberByAdding(theItem.price!.decimalNumberByMultiplyingBy(NSDecimalNumber.init(integer: itemCount)))
+            self.cartTotal = self.cartTotal.decimalNumberByAdding(theItem.price!.decimalNumberByMultiplyingBy(NSDecimalNumber.init(integer: itemCount))).decimalNumberByMultiplyingBy(NSDecimalNumber.init(float: cartConversion))
                     }
         
         NSNotificationCenter.defaultCenter().postNotificationName("newCartTotal", object: nil)

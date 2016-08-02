@@ -16,6 +16,7 @@ class CartTableCell: UITableViewCell {
     
     @IBOutlet var item: UILabel!
     
+    @IBOutlet var price: UILabel!
     
 }
 

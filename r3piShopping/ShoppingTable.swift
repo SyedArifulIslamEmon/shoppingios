@@ -24,7 +24,7 @@ class ShoppingTable: UITableViewController, UISearchResultsUpdating, UISearchBar
     {
         super.viewDidLoad()
         
-       
+      
         
         self.resultSearchController = ({
             
@@ -46,14 +46,15 @@ class ShoppingTable: UITableViewController, UISearchResultsUpdating, UISearchBar
         self.definesPresentationContext = false
         
          NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ShoppingTable.loadedSampleData(_:)), name:"SampleDataLoaded", object: nil)
-        
+        self.navigationItem.title = "Shopping"
        loadFromCoreData()
         
     }
     
     func loadedSampleData(notification: NSNotification){
-        
+        print("recieved notification")
     loadFromCoreData()
+        self.tableView.reloadData()
     }
 
     
@@ -75,8 +76,11 @@ class ShoppingTable: UITableViewController, UISearchResultsUpdating, UISearchBar
         } catch let error1 as NSError {
             print(error1)
             results = nil
+            loadTestData()
         }
-        //   print(results)
+        if(results?.count==0){
+            loadTestData()
+        }
         self.products = results! as NSArray
         self.tableView.reloadData()
     }
@@ -142,7 +146,7 @@ class ShoppingTable: UITableViewController, UISearchResultsUpdating, UISearchBar
         
         let formatter = NSNumberFormatter()
         formatter.positiveFormat = "$0.00"
-        cell?.price.text = formatter.stringFromNumber(theItem.price!)
+        cell?.price.text = formatter.stringFromNumber(theItem.price!.decimalNumberByMultiplyingBy(NSDecimalNumber.init(float: Cart.sharedInstance.cartConversion)))!+":"+Cart.sharedInstance.currency
         cell?.unit.text = theItem.unit
         
         
@@ -207,7 +211,7 @@ class ShoppingTable: UITableViewController, UISearchResultsUpdating, UISearchBar
         var message = ""
         if(self.products.count == 0){
             message = "Loading sample data"
-            loadTestData()
+           loadTestData()
         }
         return message
     }

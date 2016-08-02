@@ -21,15 +21,19 @@ class r3piShoppingTests: XCTestCase {
         super.tearDown()
     }
     
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    func testCurrencyConversion() {
+        CurencyConversion.sharedInstance.getConversionRate("USD")
+        XCTAssertEqual(Cart.sharedInstance.cartConversion, 1, "US currency conversion should be 1")
+    }
+    func testCurrencyUnitChange() {
+        CurencyConversion.sharedInstance.getConversionRate("MXN")
+        XCTAssertEqual(Cart.sharedInstance.currency, "MXN", "Should change unit to MXN")
     }
     
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock {
-            // Put the code you want to measure the time of here.
+            CurencyConversion.sharedInstance.getConversionRate("USD")
         }
     }
     

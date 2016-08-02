@@ -9,12 +9,16 @@
 import Foundation
 import UIKit
 
-class CartView: UIViewController, UITableViewDelegate {
+class ShoppingCart: UIViewController, UITableViewDelegate {
    
 
     @IBOutlet var cartTotal: UILabel!
     @IBOutlet var TitleLabel: UILabel!
+    @IBOutlet var tableView: UITableView!
+   
     
+    @IBOutlet var CurrencyPicker: UIPickerView!
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,12 +26,21 @@ class CartView: UIViewController, UITableViewDelegate {
         let formatter = NSNumberFormatter()
         formatter.positiveFormat = "$0.00"
         self.cartTotal.text = formatter.stringFromNumber(Cart.sharedInstance.cartTotal)
+        self.navigationItem.title = "Your Cart"
         
         
-         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(CartView.methodOfReceivedNotification(_:)), name:"newCartTotal", object: nil)
+        
+        
+        
+         NSNotificationCenter.defaultCenter().addObserver(self, selector: #selector(ShoppingCart.methodOfReceivedNotification(_:)), name:"newCartTotal", object: nil)
         
     }
-    
+   
+    override func viewDidAppear(animated: Bool) {
+        Cart.sharedInstance.calculateTotal()
+      tableView.reloadData()
+       
+    }
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -37,7 +50,11 @@ class CartView: UIViewController, UITableViewDelegate {
     func methodOfReceivedNotification(notification: NSNotification){
         let formatter = NSNumberFormatter()
         formatter.positiveFormat = "$0.00"
-        self.cartTotal.text = formatter.stringFromNumber(Cart.sharedInstance.cartTotal)
+        let priceString = formatter.stringFromNumber(Cart.sharedInstance.cartTotal)!+":"+Cart.sharedInstance.currency
+         dispatch_async(dispatch_get_main_queue()) {
+        self.cartTotal.text = priceString
+        }
+    
     }
     
      func numberOfSectionsInTableView(tableView: UITableView) -> Int
@@ -61,7 +78,7 @@ class CartView: UIViewController, UITableViewDelegate {
         
         
         
-            cartItem = Cart.sharedInstance.myCart[indexPath.row] as! NSDictionary
+        cartItem = Cart.sharedInstance.myCart[indexPath.row] as! NSDictionary
         let theItem : Product = cartItem["item"] as! Product
         let itemCount : Int = cartItem["count"] as! Int
         
@@ -71,6 +88,10 @@ class CartView: UIViewController, UITableViewDelegate {
         let formatter = NSNumberFormatter()
         formatter.positiveFormat = "0"
         cell?.count.text = formatter.stringFromNumber(itemCount)
+        
+       
+        formatter.positiveFormat = "$0.00"
+        cell?.price.text = formatter.stringFromNumber(theItem.price!.decimalNumberByMultiplyingBy(NSDecimalNumber.init(float: Cart.sharedInstance.cartConversion)).decimalNumberByMultiplyingBy(NSDecimalNumber.init(integer: itemCount)))
       
         
         

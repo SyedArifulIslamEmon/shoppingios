@@ -51,7 +51,7 @@ public class SampleData: NSObject {
                 let data = try NSData(contentsOfURL: NSURL(fileURLWithPath: path), options: NSDataReadingOptions.DataReadingMappedIfSafe)
                 let jsonObj = JSON(data: data)
                 if jsonObj != JSON.null {
-                    print("jsonData:\(jsonObj)")
+                    
                     
                     
                     if let items = jsonObj["items"].array {
@@ -68,8 +68,10 @@ public class SampleData: NSObject {
                                 newProduct?.unit = unit
                             }
                             appDelegate.saveContext()
-                             NSNotificationCenter.defaultCenter().postNotificationName("SampleDataLoaded", object: nil)
+                            
                         }
+                        print("Loaded Sample data from file to Core Data")
+                        NSNotificationCenter.defaultCenter().postNotificationName("SampleDataLoaded", object: nil)
                     }
                     
                 } else {
