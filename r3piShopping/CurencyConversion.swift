@@ -15,9 +15,9 @@ public typealias ServiceResponse = (JSON, NSError?) -> Void
 
 public class CurencyConversion: NSObject {
     
-    var url = "http://apilayer.net/api/live?access_key=3a2192565e7aedfb8af93e4a2f035d95&currencies=USD,AUD,CAD,PLN,MXN&format=1"
+    var url = "http://apilayer.net/api/live?access_key=3a2192565e7aedfb8af93e4a2f035d95&currencies=USD,AUD,CAD,PLN,MXN,EUR&format=1"
     
-    public var currencyChoices = ["USD","AUD","CAD","PLN","MXN"]
+    public var currencyChoices = ["USD","AUD","CAD","PLN","MXN","EUR"]
    
     
     public class var sharedInstance : CurencyConversion {
